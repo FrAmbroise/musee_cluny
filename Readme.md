@@ -17,3 +17,6 @@ Par PHGCOM — Own work by uploader, photographed at Cluny Museum, Domaine publi
 
 Statuette de Saint George
 Par Jean-Pol GRANDMONT — Travail personnel, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=100207149
+
+Thermes
+Par Mkooiman sur Wikipédia anglais, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=5011166
