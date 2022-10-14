@@ -8,3 +8,12 @@ Par Jebulon — Travail personnel, CC0, https://commons.wikimedia.org/w/index.ph
 
 Dame à la licorne
 Par Didier Descouens — Travail personnel, Domaine public, https://commons.wikimedia.org/w/index.php?curid=115126368
+
+Cluny Retable
+Par Anonyme — Marsyas 15:15, 7 March 2006 (UTC), CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=618255
+
+Recueil de Santé Rhénanie
+Par PHGCOM — Own work by uploader, photographed at Cluny Museum, Domaine public, https://commons.wikimedia.org/w/index.php?curid=6832778
+
+Statuette de Saint George
+Par Jean-Pol GRANDMONT — Travail personnel, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=100207149

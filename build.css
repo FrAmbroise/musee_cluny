@@ -1,7 +1,77 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+header {
+  position: sticky;
+  height: 90px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  position: relative;
+  height: 80px;
+  left: 40px;
+  top: 5px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-right: 40px;
+}
+header nav ul li a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+header nav ul li a :hover {
+  color: orangered;
+}
+
+body {
+  background-color: goldenrod;
+}
+
+footer {
+  background-color: red;
+}
+
+.presentation {
+  height: 60vh;
+  background-image: url(images/Mon_seul_désir_ou_La_Dame_à_la_licorne.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.presentation h1 {
+  position: relative;
+  top: -55vh;
+  color: white;
+  font-size: 5rem;
+  font-family: Verdana, "Geneva", Tahoma, sans-serif;
+  text-align: center;
+  text-shadow: 7px 7px 7px #444;
+}
+
+.obscurite {
+  position: relative;
+  height: 60vh;
+  background-color: rgba(30, 30, 30, 0.2);
 }
 
 /*# sourceMappingURL=build.css.map */
