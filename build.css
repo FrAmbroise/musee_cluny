@@ -22,7 +22,7 @@ header {
   position: sticky;
   top: 0;
   height: 90px;
-  background-color: aqua;
+  background-color: rgb(233, 211, 198);
   display: flex;
   justify-content: space-between;
   z-index: 10;
@@ -47,7 +47,7 @@ header .navigation {
   align-items: center;
   justify-content: flex-end;
   padding-right: 40px;
-  background-color: aqua;
+  background-color: rgb(233, 211, 198);
   list-style: none;
 }
 header .navigation a {
@@ -80,7 +80,7 @@ header .navigation a :hover {
     display: block;
     cursor: pointer;
     font-size: 50px;
-    color: white;
+    color: rgb(78, 76, 76);
     position: absolute;
     right: 40px;
     top: 5px;
@@ -88,11 +88,11 @@ header .navigation a :hover {
 }
 
 body {
-  background-color: goldenrod;
+  background-color: rgb(125, 149, 171);
 }
 
 footer {
-  background-color: red;
+  background-color: rgb(59, 52, 52);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 20px;
@@ -100,14 +100,26 @@ footer {
   padding-right: 10%;
   gap: 40px;
 }
+footer p {
+  color: white;
+}
 footer ul {
   list-style: none;
 }
 footer ul li {
   padding-bottom: 10px;
+  color: white;
 }
 footer .emphase {
   font-weight: bold;
+}
+@media screen and (max-width: 450px) {
+  footer {
+    display: block;
+  }
+  footer div {
+    padding-bottom: 10px;
+  }
 }
 
 .presentation {
@@ -128,6 +140,35 @@ footer .emphase {
   position: relative;
   height: 60vh;
   background-color: rgba(30, 30, 30, 0.2);
+}
+
+.introduction {
+  min-height: 40vh;
+  height: 600px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 400px) {
+  .introduction {
+    display: block;
+  }
+}
+.introduction .intro-text {
+  grid-column: 1/2;
+  text-align: center;
+}
+.introduction .intro-img {
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: 2/3;
+  height: 450px;
+  object-fit: cover;
+}
+@media screen and (max-width: 400px) {
+  .introduction .intro-img {
+    display: none;
+  }
 }
 
 .galerie-des-oeuvres {
@@ -151,6 +192,7 @@ footer .emphase {
 @media screen and (max-width: 550px) {
   .galerie-des-oeuvres {
     display: flex;
+    width: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -250,9 +292,15 @@ footer .emphase {
 .histoire-batiment h2 {
   padding-bottom: 20px;
 }
+@media screen and (max-width: 550px) {
+  .histoire-batiment {
+    display: block;
+  }
+}
 
 .batiment-img {
   height: 500px;
+  object-fit: cover;
 }
 
 .batiment-texte {
@@ -272,14 +320,15 @@ footer .emphase {
 .histoire-thermes h2 {
   padding-bottom: 20px;
 }
+@media screen and (max-width: 550px) {
+  .histoire-thermes {
+    display: block;
+  }
+}
 
 .thermes-texte {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.introduction {
-  padding-top: 100px;
 }
 
 /*# sourceMappingURL=build.css.map */
