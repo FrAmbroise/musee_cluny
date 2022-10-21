@@ -74,9 +74,11 @@ footer{
 
 .presentation{
     height: 60vh;
-    background-image: url(images/Mon_seul_désir_ou_La_Dame_à_la_licorne.jpg);
+    background-image: url(images/Mon_seul_désir_ou_La_Dame_à_la_licorne.webp);
     background-size: cover;
     background-position: center;
+    
+
     h1{
         position:relative;
         top: -55vh;
@@ -91,28 +93,96 @@ footer{
     background-color: rgba(30, 30, 30 ,0.2);
 }
 .galerie-des-oeuvres{
-    padding: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "george benoit"
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "george benoit puit"
+                         "george livre therme"
+                         "licorne licorne jardin";
+    gap: 20px;
+    @media screen and (max-width:850px){
+        width:500px;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "george benoit"
                          "george livre "
-                         "licorne licorne";
-    gap: 40px;
+                         "licorne licorne "
+                         "puit therme";
+    }
+    @media screen and (max-width: 550px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .gal-licorne{
+            width: 240px;
+        }
+    }
 }
 .gal-george{
-    //height: 500px;
+    height:420px;
+    width: 250px;
+    object-fit: contain;
     grid-area: george;
+    @media screen and (max-width: 850px) {
+        height: 220px;
+        object-fit: cover;
+    }
 }
 .gal-benoit{
-    //height: 240px;
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
     grid-area: benoit;
+    @media screen and (max-width: 850px) {
+        height: 100px;
+        object-fit: cover;
+    }
 }
 .gal-livre{
-    //height: 240px;
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
     grid-area: livre;
+    @media screen and (max-width: 850px) {
+        height: 100px;
+        object-fit: cover;
+    }
 }
 .gal-licorne{
+    height: 400px;
+    width: 520px;
+    object-fit: contain;
     grid-area: licorne;
+    @media screen and (max-width: 850px) {
+        height: 220px;
+        object-fit: cover;
+    }
+}
+.gal-jardin{
+    height: 400px;
+    width: 250px;
+    object-fit: cover;
+    grid-area: jardin;
+    @media  screen and (max-width: 850px) {
+        display: none;
+    }
+}
+.gal-puit{
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    grid-area: puit;
+}
+.gal-thermes{
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    grid-area: therme;
 }
 
 .histoire-batiment{
