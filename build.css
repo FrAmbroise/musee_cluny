@@ -33,25 +33,58 @@ header .logo {
   left: 40px;
   top: 5px;
 }
-header nav {
+header .logo img {
+  height: 80px;
+}
+header .burger {
+  display: none;
+}
+header #toggle {
+  display: none;
+}
+header .navigation {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-}
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
   padding-right: 40px;
+  background-color: aqua;
+  list-style: none;
 }
-header nav ul li a {
+header .navigation a {
   padding-left: 20px;
   text-decoration: none;
   color: black;
   font-size: 2rem;
 }
-header nav ul li a :hover {
+header .navigation a :hover {
   color: orangered;
+}
+@media screen and (max-width: 850px) {
+  header {
+    display: block;
+  }
+  header .navigation {
+    flex-direction: column;
+    display: none;
+  }
+  header .navigation a {
+    display: block;
+  }
+  header .navigation a :hover {
+    color: orangered;
+  }
+  header #toggle:checked ~ .navigation {
+    display: flex;
+  }
+  header .burger {
+    display: block;
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    right: 40px;
+    top: 5px;
+  }
 }
 
 body {
